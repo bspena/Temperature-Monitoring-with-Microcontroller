@@ -2,7 +2,7 @@
 The project consists of an ambient temperature meter on the STM32F401 Nucleo-64 microcontroller. When the *Pushbutton* is pressed, the software takes the temperature and humidity values from the [DHT11 Temperature and Humidity Sensor Module](https://components101.com/sensors/dht11-temperature-sensor) and shows them on the [16x2 LCD Display Module](https://circuitdigest.com/article/16x2-lcd-display-module-pinout-datasheet), if the temperature exceeds a maximum value (chosen by the user) the LED on the microcontroller lights up.
 
 ## Jumper Connections 
-![Links](/Links.png)
+![Links](/Jumper_Connections.png)
 
 DHT11
 GND: ground
@@ -56,9 +56,10 @@ The workspace contains two folders, where:
 * Src : file .c
 
 ## Notes
-Da notare che per il display è stata usata la modalità a 4-bit
-[Controllo rottura](https://piratelearner.com/en/bookmarks/how-to-check-whether-16x2-lcd-working-or-not/16/)
-[Codice Display](https://controllerstech.com/interface-lcd-16x2-with-stm32-without-i2c/)
-[Codice DHT11](https://www.youtube.com/watch?v=09C1dyXvSbg&t=687s)
-[POTENZIOMETRO](https://create.arduino.cc/projecthub/agarwalkrishna3009/arduino-diy-potentiometer-value-display-on-lcd-16x2-73df7f)
+* Da notare che per il display è stata usata la modalità a 4-bit
+* Il nome e la posizione di alcuni pin potrebbe variare tra i vari componenti
+* E' possibile aggiungere un potenziometro per modificare la luminosità del display
+* [Controllo rottura](https://piratelearner.com/en/bookmarks/how-to-check-whether-16x2-lcd-working-or-not/16/)
+* [Codice Display](https://controllerstech.com/interface-lcd-16x2-with-stm32-without-i2c/)
+* [Codice DHT11](https://www.youtube.com/watch?v=09C1dyXvSbg&t=687s)
 
