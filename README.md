@@ -4,21 +4,27 @@ The project consists of an ambient temperature meter on the STM32F401 Nucleo-64 
 ## Jumper Connections 
 ![Links](/Jumper_Connections.png)
 
-DHT11
-GND: ground
-VCC: alimentazione +5V
-OUTPUT: output
+### DHT11
+* GND: ground
+* VCC: +5V
+* Data: PA1 
 
-Display
-VSS: massa
-VDD: alimentazione a +5V
-VO: pin che regola il contrasto del display
-RS: pin che seleziona due tipi di registri. Il registro dati che contiene le informazioni che verranno visualizzate sul display e il registro istruzioni dove il controller del display preleva le prossime istruzioni che devono essere eseguire
-R/W: pin di lettura/scrittura che seleziona la modalità di lettura (1) o di scrittura (0)
-E: enable pin che deve essere tenuto alto per eseguire operazioni di lettura e di scrittura
-D0-D7: pin usati per inviare dati al display
-A:  anodo connesso a +5V per regolare la retroilluminazione dei display
-K:  catodo connesso a massa per regola la retroilluminazione del display
+### Display
+* VSS: ground
+* VDD: +5V
+* VO: ground
+* RS: ground
+* RW: pin di lettura/scrittura che seleziona la modalità di lettura (1) o di scrittura (0)
+* E: enable pin che deve essere tenuto alto per eseguire operazioni di lettura e di scrittura
+
+* A: +5V
+* K: ground
+
+## Legenda
+
+- **BUG**: Segnala un bug
+- **FEATURE**: Richiede una nuova funzionalità
+- **DOCUMENTATION**: Riguarda la documentazione
 
 
 
@@ -60,6 +66,8 @@ The workspace contains two folders, where:
 * Il nome e la posizione di alcuni pin potrebbe variare tra i vari componenti
 * E' possibile aggiungere un potenziometro per modificare la luminosità del display
 * [Controllo rottura](https://piratelearner.com/en/bookmarks/how-to-check-whether-16x2-lcd-working-or-not/16/)
+
+## Refernces
 * [Codice Display](https://controllerstech.com/interface-lcd-16x2-with-stm32-without-i2c/)
 * [Codice DHT11](https://www.youtube.com/watch?v=09C1dyXvSbg&t=687s)
 
